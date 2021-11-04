@@ -6,8 +6,9 @@
     "source.fixAll.eslint": true
   },
   "files.exclude": {
-    "**/app/**/*.js.map": true,
-    "**/app/**/*.js": true,
     "**/node_modules/**": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
