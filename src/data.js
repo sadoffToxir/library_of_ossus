@@ -1,4 +1,4 @@
-export const data = {
+export const starships = {
   "count": 36,
   "next": "https://swapi.dev/api/starships/?page=2",
   "previous": null,
