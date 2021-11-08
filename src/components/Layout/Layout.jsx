@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header.jsx';
-import './Layout.scss'
+import './Layout.scss';
 
 const Layout = () => (
   <>

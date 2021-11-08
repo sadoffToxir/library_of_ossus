@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { baseURL } from './config.js';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://swapi.dev/api/',
+  baseURL
 });
 
 export default axiosInstance;
