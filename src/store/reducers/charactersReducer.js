@@ -1,19 +1,46 @@
-import { REQUEST_CHARACTERS_LIST, REQUEST_CHARACTER } from "../actions/actionTypes";
-
 const initialState = {
   character: null,
-  characters: null
-}
+  characters: [],
+  characterFilms: [],
+  characterVehicles: [],
+  characterStarships: []
+};
 
 export const charactersReducer = (state = initialState, action) => {
   switch (action.type) {
-    case REQUEST_CHARACTERS_LIST:
+    case 'CHARACTERS_LIST_SET':
+      return {
+        ...state,
+        characters: {
+          ...action.payload,
+          results: state.characters.results ? [...state.characters.results, ...action.payload.results] : [...action.payload.results]
+        }
+      };
+    case 'CHARACTER_SET':
       return Object.assign({}, state, {
-        characters: action.characters,
+        character: action.payload
       });
-    case REQUEST_CHARACTER:
+    case 'CHARACTER_VEHICLES_SET':
+      return {
+        ...state,
+        characterVehicles: action.payload
+      };
+    case 'CHARACTER_STARSHIPS_SET':
+      return {
+        ...state,
+        characterStarships: action.payload
+      };
+    case 'CHARACTER_REMOVE':
       return Object.assign({}, state, {
-        character: action.character,
+        character: null,
+      });
+    case 'CHARACTER_VEHICLES_REMOVE':
+      return Object.assign({}, state, {
+        characterVehicles: [],
+      });
+    case 'CHARACTER_STARSHIPS_REMOVE':
+      return Object.assign({}, state, {
+        characterStarships: [],
       });
     default:
       return state;

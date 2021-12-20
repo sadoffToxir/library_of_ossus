@@ -1,0 +1,38 @@
+.navbar-menu {
+  margin-left: 5%;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+
+  .menu-theme-item {
+    cursor: pointer;
+    padding: 0 20px;
+    margin: 13px 0;
+    box-sizing: border-box;
+  }
+
+  .menu-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 23px 20px;
+    box-sizing: border-box;
+  }
+
+  .menu-item:hover {
+    background-color: var(--background-selected);
+  }
+
+  .menu-selectedItem {
+    background-color: var(--background-selected);
+    cursor: pointer;
+    height: 100%;
+    padding: 23px 20px;
+    box-sizing: border-box;
+  }
+  .menu-item-text {
+    margin: 0;
+    padding: 0;
+  }
+}

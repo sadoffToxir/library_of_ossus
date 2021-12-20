@@ -1,0 +1,81 @@
+.planets-modal-name {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+
+  .planets-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.planets-modal-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  align-content: flex-start;
+  width: 100%;
+
+  .planets-info {
+    max-width: 250px;
+
+    .planets-info-headers {
+      margin: 20px 10px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+  .planets-links {
+    li {
+      cursor: pointer;
+    }
+
+    .planets-residents-container {
+      border-bottom: 2px solid var(--border-color);
+      margin: 20px 10px;
+      display: flex;
+
+      .planets-residents-links {
+        margin: 0;
+      }
+    }
+    .planets-films-container {
+      margin: 20px 10px;
+      display: flex;
+
+      .planets-films-links {
+        margin: 0;
+      }
+    }
+
+    .planets-links-header {
+      width: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .planets-modal-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 3%;
+    align-content: center;
+    width: 100%;
+
+    .planets-info {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .planets-links {
+      width: 100%;
+
+      .planets-films-container {
+        padding: 20px 4% 20px;
+      }
+      .planets-residents-container {
+        padding: 0 4% 20px;
+      }
+    }
+  }
+}

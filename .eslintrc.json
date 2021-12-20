@@ -21,7 +21,6 @@
 		"arrow-spacing": "error",
 		"arrow-parens": "error",
 		"comma-dangle": "off",
-		"complexity": "warn",
 		"constructor-super": "warn",
 		"curly": [
 			"warn",
@@ -35,10 +34,6 @@
 		"eqeqeq": [
 			"warn",
 			"smart"
-		],
-		"func-style": [
-			"error",
-			"expression"
 		],
 		"guard-for-in": "warn",
 		"id-blacklist": "off",

@@ -1,15 +1,9 @@
-import { getListOfCharacters } from "../../api/charactersApi";
-import { REQUEST_CHARACTERS_LIST, REQUEST_CHARACTER } from "./actionTypes";
+import { createAction } from '@reduxjs/toolkit';
 
-export const setCharactersList = (characters) => ({ type: REQUEST_CHARACTERS_LIST, characters });
-export const setCharacter = (character) => ({ type: REQUEST_CHARACTER, character });
-
-export const requestCharactersList = () => async (dispatch) => {
-  const data = await getListOfCharacters();
-  dispatch(setCharactersList(data));
-};
-
-export const requestCharacter = (id) => async (dispatch) => {
-  const data = await getCharacter(id);
-  dispatch(setCharacter(data));
-};
+export const charactersListSet = createAction('CHARACTERS_LIST_SET');
+export const characterSet = createAction('CHARACTER_SET');
+export const characterVehicleSet = createAction('CHARACTER_VEHICLES_SET');
+export const characterStarshipSet = createAction('CHARACTER_STARSHIPS_SET');
+export const characterRemove = createAction('CHARACTER_REMOVE');
+export const characterVehiclesRemove = createAction('CHARACTER_VEHICLES_REMOVE');
+export const characterStarshipsRemove = createAction('CHARACTER_STARSHIPS_REMOVE');

@@ -1,0 +1,23 @@
+.content-catalog {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  align-content: flex-start;
+}
+.loadButton {
+  background-color: var(--background-color-secondary);
+  border: none;
+  border: 2px solid var(--border-color);
+  width: 130px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 1px 6px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .content-catalog {
+    justify-content: center;
+  }
+}

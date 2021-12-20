@@ -1,0 +1,81 @@
+.starships-modal-name {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+
+  .starships-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.starships-modal-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  align-content: flex-start;
+  width: 100%;
+
+  .starships-info {
+    max-width: 250px;
+
+    .starships-info-headers {
+      margin: 20px 10px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+  .starships-links {
+    li {
+      cursor: pointer;
+    }
+
+    .starships-films-container {
+      border-bottom: 2px solid var(--border-color);
+      margin: 20px 10px;
+      display: flex;
+
+      .starships-films-links {
+        margin: 0;
+      }
+    }
+    .starships-pilots-container {
+      margin: 20px 10px;
+      display: flex;
+
+      .starships-pilots-links {
+        margin: 0;
+      }
+    }
+
+    .starships-links-header {
+      width: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .starships-modal-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 3%;
+    align-content: center;
+    width: 100%;
+
+    .starships-info {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .starships-links {
+      width: 100%;
+
+      .starships-films-container {
+        padding: 20px 4% 20px;
+      }
+      .starships-pilots-container {
+        padding: 0 4% 20px;
+      }
+    }
+  }
+}

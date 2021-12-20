@@ -1,1 +1,2 @@
-export const baseURL = 'https://swapi.dev/api/';
+export const baseURL = 'http://localhost:3000/api';
+// https://swapi.dev/
