@@ -1,0 +1,60 @@
+.hamburger {
+  cursor: pointer;
+  padding: 12px 0;
+  float: right;
+}
+.sidebar-menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  .sidebar-menu-navigation {
+    border-left: 2px solid var(--border-color);
+    width: 50%;
+    background-color: var(--background-color-secondary);
+    position: fixed;
+    float: right;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    .sidebar-close-button {
+      color: var(--font-color-secondary);
+      cursor: pointer;
+      margin-top: 5px;
+      width: 94%;
+      font-size: 70px;
+      text-align: right;
+    }
+
+    .sidebar-menu-theme-item {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .sidebar-menu-item {
+      width: 100%;
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+
+    .sidebar-menu-item:hover {
+      background-color: var(--background-selected);
+    }
+
+    .sidebar-menu-selectedItem {
+      font-weight: bold;
+      background-color: var(--background-selected);
+      width: 100%;
+      color: black;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+}

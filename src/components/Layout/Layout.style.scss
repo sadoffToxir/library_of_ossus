@@ -1,0 +1,25 @@
+main {
+  border-radius: 10px;
+  max-width: 1000px;
+  height: 100%;
+  padding: 10px 20px;
+  margin: 90px auto 0;
+}
+
+@media screen and (max-width: 1030px) {
+  main {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    width: 470px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: auto;
+  }
+}

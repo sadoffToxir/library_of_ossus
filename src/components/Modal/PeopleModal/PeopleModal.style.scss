@@ -1,0 +1,93 @@
+.people-modal-name {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 20px;
+  background-color: var(--background-color-secondary);
+
+  .character-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.people-modal-container {
+  background-color: var(--background-color-secondary);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  align-content: flex-start;
+  width: 100%;
+
+  .people-info {
+    width: 250px;
+
+    .people-info-headers {
+      margin: 0 10px 20px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+  .people-links {
+    width: 370px;
+
+    li {
+      cursor: pointer;
+    }
+
+    .people-homeworld {
+      cursor: pointer;
+    }
+
+    .people-links-container {
+      border-bottom: 2px solid var(--border-color);
+      margin: 20px 10px;
+      display: flex;
+
+      .people-links-container {
+        border-top: 2px solid var(--border-color);
+      }
+
+      .people-links-header {
+        width: 200px;
+      }
+
+      .people-links {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .people-modal-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 3%;
+    align-content: center;
+    width: 100%;
+
+    .people-info {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .people-links {
+      width: 100%;
+
+      .people-homeworld {
+        margin: 0 8%;
+      }
+
+      .people-films-container {
+        padding: 20px 4% 20px;
+      }
+      .people-vehicles-container {
+        padding: 0 4% 20px;
+      }
+      .people-starships-container {
+        padding: 0 4% 20px;
+      }
+    }
+  }
+}

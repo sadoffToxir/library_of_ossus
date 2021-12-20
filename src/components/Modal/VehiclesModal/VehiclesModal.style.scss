@@ -1,0 +1,85 @@
+.vehicles-modal-name {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 20px;
+
+  .vehicle-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.vehicles-modal-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  align-content: flex-start;
+  width: 100%;
+
+  .vehicles-info {
+    width: 250px;
+
+    .vehicles-info-headers {
+      margin: 0 10px 20px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+  .vehicles-links {
+    width: 370px;
+
+    li {
+      cursor: pointer;
+    }
+
+    .vehicles-pilots-container {
+      margin: 20px 10px;
+      display: flex;
+
+      .vehicles-pilots-links {
+        margin: 0;
+      }
+    }
+
+    .vehicles-films-container {
+      border-top: 2px solid var(--border-color);
+      margin: 20px 10px;
+      display: flex;
+
+      .vehicles-films-links {
+        margin: 0;
+      }
+    }
+
+    .vehicles-links-header {
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .vehicles-modal-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 3%;
+    align-content: center;
+    width: 100%;
+
+    .vehicles-info {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .vehicles-links {
+      width: 100%;
+
+      .vehicles-films-container {
+        padding: 20px 4% 20px;
+      }
+      .vehicles-pilots-container {
+        padding: 0 4% 20px;
+      }
+    }
+  }
+}

@@ -1,5 +1,36 @@
+body[theme="dark"] {
+  --background-color-primary: #040706;
+  --background-color-secondary: #040706;
+  --font-color-primary: white;
+  --font-color-secondary: #f74040;
+  --border-color: #f74040;
+  --background-selected: #504d4d;
+  --background-size: 100%;
+  --background-position: center;
+  --background-page-image: url("./assets/images/background-image-dark.jpg");
+}
+body[theme="light"] {
+  --background-color-primary: #6eccf9;
+  --background-color-secondary: white;
+  --font-color-primary: black;
+  --font-color-secondary: #6eccf9;
+  --border-color: #6eccf9;
+  --background-selected: #b0daff;
+  --background-size: auto 100%;
+  --background-position: right;
+  --background-page-image: url("./assets/images/background-image-light3.png");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+}
+body {
+  background-position: var(--background-position);
+  background-image: var(--background-page-image);
+  background-size: var(--background-size);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--background-color-primary);
 }

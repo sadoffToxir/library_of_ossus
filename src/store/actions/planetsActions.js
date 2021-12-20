@@ -1,15 +1,7 @@
-import { getListOfPlanets, getPlanet } from "../../api/PlanetsApi";
-import { REQUEST_PLANETS_LIST, REQUEST_PLANET } from "./actionTypes";
+import { createAction } from '@reduxjs/toolkit';
 
-export const setPlanetsList = (planets) => ({ type: REQUEST_PLANETS_LIST, planets });
-export const setPlanet = (planet) => ({ type: REQUEST_PLANET, planet });
-
-export const requestPlanetsList = () => async (dispatch) => {
-  const data = await getListOfPlanets();
-  dispatch(setPlanetsList(data));
-};
-
-export const requestPlanet = (id) => async (dispatch) => {
-  const data = await getPlanet(id);
-  dispatch(setPlanet(data));
-};
+export const planetsListSet = createAction('PLANETS_LIST_SET');
+export const planetSet = createAction('PLANET_SET');
+export const planetResidentsSet = createAction('PLANET_RESIDENTS_SET');
+export const planetRemove = createAction('PLANET_REMOVE');
+export const planetResidentsRemove = createAction('PLANET_RESIDENTS_REMOVE');

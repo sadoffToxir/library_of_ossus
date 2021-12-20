@@ -15,12 +15,11 @@ module.exports = {
     hot: true,
     port: 8080,
   },
-  entry: {
-    main: path.resolve(__dirname, './src/index.js')
-  },
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -37,7 +36,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         },
       },
       {

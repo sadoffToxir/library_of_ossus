@@ -1,0 +1,23 @@
+.tileContainer {
+  box-sizing: border-box;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color-secondary);
+  padding: 1%;
+  width: 225px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  .tileAvatar {
+    width: 56%;
+    margin: 0 auto;
+    padding: 15% 10%;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    text-align: center;
+    height: auto;
+
+    .tileAvatarText {
+      font-size: 60px;
+    }
+  }
+}

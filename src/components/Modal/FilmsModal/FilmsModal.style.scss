@@ -1,0 +1,89 @@
+.films-modal-name {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 20px;
+
+  .film-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.films-modal-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  align-content: flex-start;
+  width: 100%;
+
+  .films-info {
+    width: 250px;
+
+    .films-info-headers {
+      margin: 0 10px 20px;
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+  .films-links {
+    width: 370px;
+
+    li {
+      cursor: pointer;
+    }
+
+    .films-characters-container,
+    .films-planets-container,
+    .films-vehicles-container,
+    .films-starships-container {
+      border-bottom: 2px solid var(--border-color);
+      margin: 20px 10px;
+      display: flex;
+
+      .films-characters-links,
+      .films-planets-links,
+      .films-vehicles-links,
+      .films-starships-links {
+        margin: 0;
+      }
+    }
+    .films-species-container {
+      margin: 20px 10px;
+      display: flex;
+      .films-species-links {
+        margin: 0;
+      }
+    }
+    .films-links-header {
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .films-modal-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 3%;
+    align-content: center;
+    width: 100%;
+
+    .films-info {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .films-links {
+      width: 100%;
+
+      .films-characters-container,
+      .films-planets-container,
+      .films-vehicles-container,
+      .films-starships-container,
+      .films-species-container {
+        padding: 20px 4% 20px;
+      }
+    }
+  }
+}
