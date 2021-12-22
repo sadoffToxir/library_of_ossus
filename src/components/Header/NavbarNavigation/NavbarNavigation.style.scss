@@ -11,6 +11,14 @@
     padding: 0 20px;
     margin: 13px 0;
     box-sizing: border-box;
+
+    .menu-help-text {
+      display: block;
+      position: absolute;
+      background-color: var(--background-color-secondary);
+      border: 2px solid var(--border-color);
+      margin: 0 0 0 50px;
+    }
   }
 
   .menu-item {
